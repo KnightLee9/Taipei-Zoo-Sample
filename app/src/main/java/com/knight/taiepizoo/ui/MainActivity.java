@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         commitFragment(new AreaListFragment(), "", true, null);
-  }
+    }
 
     private void commitFragment(Fragment fragment, String name, boolean isRoot, Bundle argument) {
         if (argument != null) {
@@ -39,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
             ft.replace(R.id.container, fragment)
                 .commitAllowingStateLoss();
         } else {
-            ft
-                .replace(R.id.container, fragment)
+            ft.replace(R.id.container, fragment)
                 .addToBackStack(name)
                 .commitAllowingStateLoss();
         }

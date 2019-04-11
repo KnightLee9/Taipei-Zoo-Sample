@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+    >
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/w"
+            android:paddingBottom="15dp"
+        >
+            <ImageView android:id="@+id/imgPlant"
+                       android:layout_width="0dp"
+                       android:layout_height="0dp"
+                       app:layout_constraintDimensionRatio="H,4:3"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+            <TextView android:id="@+id/textName"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="16sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/imgPlant"
+            />
+
+            <TextView android:id="@+id/textNameEn"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="16sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textName"
+            />
+
+            <TextView android:id="@+id/labelAlsoKnown"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      android:text="@string/also_known"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textNameEn"
+            />
+
+            <TextView android:id="@+id/textAlsoKnown"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/labelAlsoKnown"
+            />
+
+            <TextView android:id="@+id/labelBrief"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      android:text="@string/brief"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textAlsoKnown"
+            />
+
+            <TextView android:id="@+id/textBrief"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/labelBrief"
+            />
+
+            <TextView android:id="@+id/labelFeature"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      android:text="@string/feature"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textBrief"
+            />
+
+            <TextView android:id="@+id/textFeature"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/labelFeature"
+            />
+
+            <TextView android:id="@+id/labelFunction"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="15dp"
+                      android:text="@string/function"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textFeature"
+            />
+
+            <TextView android:id="@+id/textFunction"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintRight_toRightOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/labelFunction"
+            />
+
+            <TextView android:id="@+id/labelLastUpdate"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="15dp"
+                      android:text="@string/label_last_update"
+                      android:textColor="@color/text"
+
+                      android:textSize="14sp"
+                      app:layout_constraintLeft_toLeftOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/textFunction"
+            />
+
+            <TextView android:id="@+id/textLastUpdate"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="15dp"
+                      android:textColor="@color/text"
+                      android:textSize="14sp"
+                      app:layout_constraintBaseline_toBaselineOf="@id/labelLastUpdate"
+                      app:layout_constraintLeft_toRightOf="@id/labelLastUpdate"
+            />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

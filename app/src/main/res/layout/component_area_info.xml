@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/w"
+    >
+        <ImageView android:id="@+id/imgArea"
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   app:layout_constraintDimensionRatio="H,800:533"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView android:id="@+id/textInfo"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="15dp"
+                  android:textSize="14sp"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/imgArea"
+        />
+
+        <TextView android:id="@+id/textMemo"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="15dp"
+                  android:textSize="14sp"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/textInfo"
+        />
+
+        <TextView android:id="@+id/textCategory"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginHorizontal="15dp"
+                  android:textSize="14sp"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/textMemo"
+        />
+
+        <TextView android:id="@+id/textOpenUrl"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginHorizontal="15dp"
+                  android:text="@string/open_web"
+                  android:textColor="@color/blue"
+                  android:textSize="14sp"
+                  app:layout_constraintBaseline_toBaselineOf="@id/textCategory"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/textInfo"
+        />
+        <View android:layout_width="match_parent"
+              android:layout_height="15dp"
+              android:layout_marginTop="15dp"
+              android:background="@color/grey"
+              app:layout_constraintTop_toBottomOf="@id/textCategory"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
